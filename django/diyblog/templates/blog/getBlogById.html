@@ -20,8 +20,8 @@
         <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
             <form class="form-inline my-2 my-lg-0">
                 <div>
-                    <a class="btn btn-outline-danger my-2 my-sm-0" type="/login">Login</a>
-                    <a class="btn btn-outline-success my-2 my-sm-0" type="/submit">Signup</a>
+                    <a class="btn btn-outline-danger my-2 my-sm-0" class="btn btn-outline-success" href="/user_auth/accounts/logout">Logout</a>
+                    
                  </div>
             </form>
         </div>
@@ -38,7 +38,7 @@
                 <div class="p-3 border border-dark">
                     <div class="row">
                         <div class="col blog-id">
-                        <h3 class=""> <u>Blog ID :</u> </h3> <h4>{{post.blog_id}}</h4>
+                        <h3 class=""> <u>Blog ID :</u> </h3> <h4> <a class="text-dark" href="/blog/{{post.blog_id}}/" > {{post.blog_id}}</a> </h4>
                         </div>
                         <div class="col blog-title">
                             <h3><u> Blog Title : </u></h3> <h4>{{post.blog_title}}</h4>
@@ -53,16 +53,21 @@
                 <br />
                 <div class="row p-2 border border-dark">
                     <div class="col author-id">
-                     <h3><u> Author ID : </u> </h3> <h4> {{post.author_id}}</h4>
+                     <h3><u> Author ID : </u> </h3> <h4> <a class="text-dark" href="/blog/bloggers/{{post.author_id}}/" > {{post.author_id}}</a>  </h4>
                     </div>
                     <div class="col author-name">
-                     <h3> <u>Author Name :</u> </h3>   <h4>{{post.author_name}}</h4>
+                     <h3> <u>Author Name :</u> </h3>   <h4> <a class="text-dark" href="/blog/bloggers/{{post.author_id}}/" > {{post.author_name}}</a> </h4>
                     </div>
                 </div>
                 
             </div>
            
             {% endfor %}
+            <br />
+            <br />
+            <div class="text-center">
+                <a class="btn btn-outline-danger my-2 my-sm-0" class="btn btn-outline-success" href="/blog/">Redirect to Blog Page</a>
+            </div>
         </div>
     </div>
 </body>

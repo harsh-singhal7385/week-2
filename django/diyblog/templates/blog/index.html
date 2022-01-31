@@ -27,8 +27,8 @@
             <form class="form-inline my-2 my-lg-0">
                 {% csrf_token %}
                 <div>
-                    <a class="btn btn-outline-danger my-2 my-sm-0" type="/login">Login</a>
-                    <a class="btn btn-outline-success my-2 my-sm-0" type="/submit">Signup</a>
+                    <a class="btn btn-outline-danger my-2 my-sm-0" class="btn btn-outline-success" href="/user_auth/accounts/logout">Logout</a>
+                    
                  </div>
             </form>
         </div>
@@ -50,20 +50,20 @@
                 <br />
                 <div class="row">
                     <div class="col p-3">
-                        <a href="create/" type="button" class="btn btn-warning p-3" target="_blank" > Create a Blog </a>
+                        <a href="create/" type="button" class="btn btn-warning p-3"  > Create a Blog </a>
                     </div>
                     <div class="col p-3">
-                        <a href="update/" type="button" class="btn btn-dark p-3" target="_blank" > Update a Blog </a>
+                        <a href="update/" type="button" class="btn btn-dark p-3"  > Update a Blog </a>
                     </div>
                 </div>
                 <br />
                 <br />
                 <div class="row">
                     <div class="col p-3">
-                        <a href="delete/" type="button" class="btn btn-danger p-3" target="_blank" > Delete a Blog </a>
+                        <a href="delete/" type="button" class="btn btn-danger p-3"  > Delete a Blog </a>
                     </div>
                     <div class="col p-3">
-                        <a type="button"  data-toggle="collapse" data-target="#navbarToggleExternalContent" class="btn btn-dark p-3" target="_blank" > Search a Blog </a>
+                        <a type="button"  data-toggle="collapse" data-target="#navbarToggleExternalContent" class="btn btn-dark p-3"  > Search a Blog </a>
                     </div>                   
                 </div>
                 <br />
@@ -72,10 +72,10 @@
                 <div class="collapse" id="navbarToggleExternalContent">
                     <div class="row">
                         <div class="col p-3">
-                            <a href="blogid/" type="button" class="btn btn-primary p-3" target="_blank" > Search Blog by BlogId </a>
+                            <a href="blogid/" type="button" class="btn btn-primary p-3"  > Search Blog by BlogId </a>
                         </div>
                         <div class="col p-3">
-                            <a href="blogger/" type="button" class="btn btn-primary p-3" target="_blank" > Search Author by AuthorId </a>
+                            <a href="blogger/" type="button" class="btn btn-primary p-3"  > Search Author by AuthorId </a>
                         </div>
                     </div>
                 </div> 
@@ -83,20 +83,20 @@
                 <br />
                 <div class="row">
                     <div class="col p-3">
-                        <a href="blogs/" type="button" class="btn btn-dark p-3" target="_blank" > Get Blog List </a>
+                        <a href="blogs/" type="button" class="btn btn-dark p-3"  > Get Blog List </a>
                     </div>
                     <div class="col p-3">
-                        <a href="bloggers/" type="button" class="btn btn-danger p-3" target="_blank" > Get Bloggers List </a>
+                        <a href="bloggers/" type="button" class="btn btn-danger p-3"  > Get Bloggers List </a>
                     </div>
                 </div>
                 <br />
                 <br />
                 <div class="row">
                     <div class="col p-3">
-                        <a href="blogid/" type="button" class="btn btn-dark p-3" target="_blank" > Get Blog by Id </a>
+                        <a href="blogid/" type="button" class="btn btn-dark p-3"  > Get Blog by Id </a>
                     </div>
                     <div class="col p-3">
-                        <a href="blogger/" type="button" class="btn btn-warning p-3" target="_blank" > Get Author by Id </a>
+                        <a href="blogger/" type="button" class="btn btn-warning p-3"  > Get Author by Id </a>
                     </div>
                 </div>
             </div>

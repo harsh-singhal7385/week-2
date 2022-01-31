@@ -87,10 +87,10 @@ def deleteBlog(request):
 def deleteBlogData(request,slug):
     if request.method == 'POST':
         print(" post request received")
-        # author_id = request.POST['author-id']
         blog_id = request.POST['blog-id']
-        # author_name = request.POST['author-name']
-        data = get_object_or_404(Blog, blog_id = blog_id )
+        blog_description = request.POST['blog-description']
+      
+        data = get_object_or_404(Blog, blog_id = blog_id, blog_description = blog_description)
         data.delete()
         return redirect( "/blog/blogs/")
     data = Blog.objects.filter(author_id = slug).first()
