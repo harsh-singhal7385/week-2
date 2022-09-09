@@ -1,6 +1,7 @@
 # week-2
-J2J batch week-2 assignment
+week-2 :
 
+Blog App in Django Framework ( Python Language )
 
 https://github.com/harsh-singhal7385/week-2
 
